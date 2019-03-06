@@ -1,0 +1,38 @@
+{
+  "name": "che-call-center",
+  "version": "1.0.0",
+  "description": "The Dashboard HTML5/CSS3/JS build. Uses Vue.JS and Bulma.",
+  "main": "site.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass --omit-source-map-url assets/css/style.scss assets/css/style.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/True-Productions/CHE-Call-Center.git"
+  },
+  "keywords": [
+    "chicago",
+    "helicopter",
+    "experience",
+    "che",
+    "call",
+    "center",
+    "dashboard"
+  ],
+  "author": "True Productions",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/True-Productions/CHE-Call-Center/issues"
+  },
+  "homepage": "https://github.com/True-Productions/CHE-Call-Center#readme",
+  "devDependencies": {
+    "bulma": "^0.7.4",
+    "node-sass": "^4.11.0",
+    "vpm": "0.0.3",
+    "vue": "^2.6.8",
+    "webpack": "^4.29.6"
+  }
+}
