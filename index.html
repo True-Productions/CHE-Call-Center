@@ -1,37 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My custom Bulma website</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>CHE Call Center Dashboard</title>
+    <link rel="stylesheet" href="assets/css/dist/style.css">
 </head>
 <body>
-    <h1 class="title">
-        Bulma
-    </h1>
 
-    <p class="subtitle">
-        Modern CSS framework based on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox</a>
-    </p>
+    <main id="content">
 
-    <div class="field">
-        <div class="control">
-            <input class="input" type="text" placeholder="Input">
-        </div>
-    </div>
+        <section id="step1" class="steps section">
+            <div class="container">
+                <h2>Step <span class="number">1</span></h2>
+                <div class="columns">
+                    <div class="column">
+                        <div class="container" id="inner-content">
 
-    <div class="field">
-        <p class="control">
-            <span class="select">
-            <select>
-                <option>Select dropdown</option>
-            </select>
-            </span>
-        </p>
-    </div>
+                            <h3>Customer Search</h3>
+                            <div class="columns" id="input-set">
+                                <div class="column">
+                                    <input value="" type="text" placeholder="Full Name*" class="input" required />
+                                    <input value="" type="text" placeholder="Phone Number*" class="input" required />
+                                    <input value="" type="text" placeholder="Service Inquiry*" class="input" required />
+                                    <input value="" type="text" placeholder="Vendor/Location*" class="input" required />
+                                <!-- end .column --></div>
+                                <div class="column">
+                                    <input value="" type="text" placeholder="Email*" class="input" required />
+                                    <input value="" type="text" placeholder="Resident or Visitor*" class="input" required />
+                                    <input value="" type="text" placeholder="Lead Source*" class="input" required />
+                                <!-- end .column --></div>
+                            <!-- end #input-set --></div>
 
-    <div class="buttons">
-        <a class="button is-primary">Primary</a>
-        <a class="button is-link">Link</a>
-    </div>
+                            <h3>Sales Agent</h3>
+                            <div class="columns" id="input-set">
+                                <div class="column">
+                                    <input value="" type="text" placeholder="Concierge/Kiosk Name*" class="input" required />
+                                <!-- end .column --></div>
+                                <div class="column">
+                                    <input value="" type="text" placeholder="Contact Info*" class="input" required />
+                                <!-- end .column --></div>
+                            <!-- end #input-set --></div>
+
+                        <!-- end #inner-content --></div>
+                    <!-- end .column --></div>
+                <!-- end .columns --></div>
+            <!-- end .container --></div>
+        <!-- end #step1 --></section>
+        
+        <section id="step2" class="steps section">
+            <div class="container">
+                <h2>Step <span class="number">2</span></h2>
+                <div class="columns">
+                    <div class="column">
+                        <div class="container" id="inner-content">
+
+                            <h3>Passenger 1</h3>
+                            <div class="columns" id="passenger-set">
+                                <div class="column is-half">
+                                    <input value="" type="text" placeholder="Full Name*" class="input" required />
+                                    <input value="" type="text" placeholder="Mobile Phone*" class="input" required />
+                                <!-- end .column --></div>
+                                <div class="column is-half">
+                                    <input value="" type="text" placeholder="Email*" class="input" required />
+                                    <input value="" type="text" placeholder="Weight*" class="input" required />
+                                <!-- end .column --></div>
+                            <!-- end #passenger-set --></div>
+                            <div class="columns" id="add" data-target="#passenger-set">
+                                <div class="column is-3 is-offset-9">
+                                    <button class="btn">Save</button>
+                                    <button class="btn">+</button>
+                                    <button class="btn is-hidden">-</button>
+                                <!-- end .column --></div>
+                            <!-- end #add --></div>
+
+                        <!-- end #inner-content --></div>
+                    <!-- end .column --></div>
+                <!-- end .columns --></div>
+            <!-- end .container --></div>
+        <!-- end #step2 --></section>
+
+        <section id="step3" class="steps section">
+            <div class="container">
+                <h2>Step <span class="number">3</span></h2>
+                <div class="columns">
+                    <div class="column">
+                        <div class="container" id="inner-content">
+
+                        <!-- end #inner-content --></div>
+                    <!-- end .column --></div>
+                <!-- end .columns --></div>
+            <!-- end .container --></div>
+        <!-- end #step3 --></section>
+
+        <section id="step4" class="steps section">
+            <div class="container">
+                <h2>Step <span class="number">4</span></h2>
+                <div class="columns">
+                    <div class="column">
+                        <div class="container" id="inner-content">
+
+                        <!-- end #inner-content --></div>
+                    <!-- end .column --></div>
+                <!-- end .columns --></div>
+            <!-- end .container --></div>
+        <!-- end #step4 --></section>
+
+        <section id="step5" class="steps section">
+            <div class="container">
+                <h2>Step <span class="number">5</span></h2>
+                <div class="columns">
+                    <div class="column">
+                        <div class="container" id="inner-content">
+
+                        <!-- end #inner-content --></div>
+                    <!-- end .column --></div>
+                <!-- end .columns --></div>
+            <!-- end .container --></div>
+        <!-- end #step5 --></section>
+
+        <section id="checkout" class="steps section">
+            <div class="container">
+                <h2>Checkout</h2>
+                <div class="columns">
+                    <div class="column">
+                        <div class="container" id="inner-content">
+
+                        <!-- end #inner-content --></div>
+                    <!-- end .column --></div>
+                <!-- end .columns --></div>
+            <!-- end .container --></div>
+        <!-- end #checkout --></section>
+
+    <!-- end #content --></main>
+
+    <footer id="continue" class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-9 is-offset-3" id="btn-set">
+                    <button class="btn exit">Save & Exit</button>
+                    <button class="btn continue">Save & Continue</button>
+                    <button class="btn back">Back</button>
+                    <button class="btn next">Next</button>
+                <!-- end #btn-set --></div>
+            <!-- end .columns --></div>
+        <!-- end .container --></div>
+    <!-- end #continue --></footer>
+
 </body>
 </html>
