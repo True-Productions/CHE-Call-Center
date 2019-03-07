@@ -6583,3 +6583,91 @@ html, body {
       font-size: 24px;
       font-weight: bold;
       text-transform: capitalize; }
+  #content #checkout .customer {
+    text-transform: capitalize;
+    color: #262626;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px; }
+  #content #checkout .customer::first-letter {
+    font-size: 1.5rem; }
+  #content #checkout .reservation {
+    padding: 25px 35px;
+    margin-bottom: 35px;
+    color: #262626;
+    background-color: #EBF4FD;
+    border: 1px solid rgba(0, 118, 191, 0.35);
+    border-radius: 7px;
+    text-align: center;
+    text-transform: none; }
+    #content #checkout .reservation .header {
+      font-weight: bold; }
+  #content #checkout .receipt #receipt {
+    margin: 0; }
+    #content #checkout .receipt #receipt #receipt-inner {
+      padding-left: .75rem;
+      padding-right: .75rem; }
+      #content #checkout .receipt #receipt #receipt-inner #header {
+        text-align: right;
+        text-transform: capitalize;
+        color: #262626;
+        font-weight: bolder;
+        font-size: 16px; }
+        #content #checkout .receipt #receipt #receipt-inner #header .heading {
+          text-transform: capitalize;
+          font-size: 16px;
+          line-height: 2;
+          margin-bottom: 15px;
+          font-weight: bolder; }
+        #content #checkout .receipt #receipt #receipt-inner #header .small {
+          font-size: 14px;
+          color: #7D8990; }
+        #content #checkout .receipt #receipt #receipt-inner #header .input {
+          border-radius: 0;
+          border: 1px solid #C8C8C8;
+          width: 25%;
+          font-size: 14px;
+          line-height: 1;
+          padding: 0px 5px; }
+        #content #checkout .receipt #receipt #receipt-inner #header .btn {
+          background-color: #7D8990;
+          color: #FFFFFF;
+          font-size: 14px;
+          padding: 7.5px 15px;
+          line-height: 1;
+          border-radius: 3.5px;
+          border: none;
+          margin-right: 15px; }
+      #content #checkout .receipt #receipt #receipt-inner #pricing {
+        text-align: right;
+        color: #262626; }
+        #content #checkout .receipt #receipt #receipt-inner #pricing .dollar {
+          text-align: right;
+          display: block;
+          margin-bottom: 15px;
+          font-size: 16px;
+          line-height: 2; }
+        #content #checkout .receipt #receipt #receipt-inner #pricing #total-amount-due,
+        #content #checkout .receipt #receipt #receipt-inner #pricing #authorized-amount,
+        #content #checkout .receipt #receipt #receipt-inner #pricing #balance-outstanding {
+          font-weight: bold; }
+        #content #checkout .receipt #receipt #receipt-inner #pricing #authorized-amount {
+          font-size: 14px;
+          color: #7D8990; }
+  #content #complete {
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 6rem; }
+    #content #complete .btn {
+      color: #FFFFFF;
+      padding: 15px 25px;
+      line-height: 1.5;
+      border-radius: 6px;
+      border: none;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: capitalize; }
+    #content #complete #go-back .btn {
+      background-color: #FF2021; }
+    #content #complete #proceed .btn {
+      background-color: #0076BF; }

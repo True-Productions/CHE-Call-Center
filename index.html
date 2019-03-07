@@ -325,8 +325,8 @@
         <section id="confirm" class="section">
             <div class="container">
                 <a href="#" class="btn">Continue to Checkout</a>
-            </div>
-        </section>
+            <!-- end .container --></div>
+        <!-- end #confirm --></section>
 
         <section id="checkout" class="steps section">
             <div class="container">
@@ -335,11 +335,65 @@
                     <div class="column">
                         <div class="container" id="inner-content">
 
+                            <h2 class="customer">Testy McTesterson Sr.</h2>
+
+                            <div class="reservation">
+                                <div class="info-content" id="reservation"><span class="header">Reservation:</span> <span class="info">R-61195</span></div>
+                                <div class="info-content" id="no-passengers"><span class="header">Number of Passengers:</span> <span class="info">4</span></div>
+                                <div class="info-content" id="flight-time"><span class="header">Flight Time:</span> <span class="info"><time datetime="2019-03-15">3/8/19 1:00 PM</time></span></div>
+                            <!-- end #reservation --></div>
+
+                            <div class="receipt">
+                                <div class="container is-fluid" id="receipt">
+                                    <div class="columns" id="receipt-inner">
+                                        <div class="column is-10" id="header">
+                                            <span class="heading">Sub-Total</span>
+                                            <span class="heading">Sales Tax</span>
+                                            <span class="heading">Amusement Tax</span>
+                                            <span class="heading">Processing Fee</span>
+                                            <span class="heading">Total Before Coupons</span>
+                                            <span class="heading"><button class="btn">Change Discount</button> Discount</span>
+                                            <span class="heading"><button class="btn">Add Coupon</button> <input value="" type="text" class="input" name="coupon" /></span>
+                                            <span class="heading">Total Coupon Discount</span>
+                                            <span class="heading">Total Amount Due</span>
+                                            <span class="heading small">Authorized Amount</span>
+                                            <span class="heading">Balance Outstanding</span>
+                                        <!-- end #header --></div>
+                                        <div class="column" id="pricing">
+                                            <span class="dollar" id="sub-total">$325.00</span>
+                                            <span class="dollar" id="sales-tax">$25.00</span>
+                                            <span class="dollar" id="amusement-tax">$15.00</span>
+                                            <span class="dollar" id="processing-fee">$15.00</span>
+                                            <span class="dollar" id="total-before-coupons">$380.00</span>
+                                            <span class="dollar" id="discount">($50.00)</span>
+                                            <span class="dollar" id="empty">&nbsp;</span>
+                                            <span class="dollar" id="total-coupon-discount">($50.00)</span>
+                                            <span class="dollar" id="total-amount-due">$330.00</span>
+                                            <span class="dollar small" id="authorized-amount">$100.00</span>
+                                            <span class="dollar" id="balance-outstanding">$230.00</span>
+                                        <!-- end #header --></div>
+                                    <!-- end #receipt-inner --></div>
+                                <!-- end #receipt --></div>
+                            <!-- end .receipt --></div>
+
                         <!-- end #inner-content --></div>
                     <!-- end .column --></div>
                 <!-- end .columns --></div>
             <!-- end .container --></div>
         <!-- end #checkout --></section>
+
+        <section id="complete" class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column" id="go-back">
+                        <a href="#" class="btn">Go Back to Reservation</a>
+                    </div>
+                    <div class="column" id="proceed">
+                        <a href="#" class="btn">Proceed to Payment</a>
+                    </div>
+                </div>
+            <!-- end .container --></div>
+        <!-- end #confirm --></section>
 
     <!-- end #content --></main>
 

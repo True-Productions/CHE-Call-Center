@@ -320,7 +320,7 @@ html,body {
 
     #confirm {
         text-align: center;
-        
+
         .btn {
             background-color: $blue;
             color: $white;
@@ -331,6 +331,135 @@ html,body {
             font-size: 24px;
             font-weight: bold;
             text-transform: capitalize;
+        }
+    }
+
+    #checkout {
+        .customer {
+            text-transform: capitalize;
+            color: $grey-super-dark;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .customer::first-letter {
+            font-size: 1.5rem;
+        }
+
+        .reservation {
+            padding: 25px 35px;
+            margin-bottom: 35px;
+            color: $grey-super-dark;
+            background-color: $blue-light;
+            border: 1px solid rgba(0,118,191,.35);
+            border-radius: 7px;
+            text-align: center;
+            text-transform: none;
+
+            .header {
+                font-weight: bold;
+            }
+        }
+
+        .receipt {
+            #receipt {
+                margin: 0;
+
+                #receipt-inner {
+                    padding-left: .75rem;
+                    padding-right: .75rem;
+
+                    #header {
+                        text-align: right;
+                        text-transform: capitalize;
+                        color: $grey-super-dark;
+                        font-weight: bolder;
+                        font-size: 16px;
+
+                        .heading {
+                            text-transform: capitalize;
+                            font-size: 16px;
+                            line-height: 2;
+                            margin-bottom: 15px;
+                            font-weight: bolder;
+                        }
+                        .small {
+                            font-size: 14px;
+                            color: $grey-dark;
+                        }
+
+                        .input {
+                            border-radius: 0;
+                            border: 1px solid $grey-medium;
+                            width: 25%;
+                            font-size: 14px;
+                            line-height: 1;
+                            padding: 0px 5px;
+                        }
+                        .btn {
+                            background-color: $grey-dark;
+                            color: $white;
+                            font-size: 14px;
+                            padding: 7.5px 15px;
+                            line-height: 1;
+                            border-radius: 3.5px;
+                            border: none;
+                            margin-right: 15px;
+                        }
+                    }
+
+                    #pricing {
+                        text-align: right;
+                        color: $grey-super-dark;
+
+                        .dollar {
+                            text-align: right;
+                            display: block;
+                            margin-bottom: 15px;
+                            font-size: 16px;
+                            line-height: 2;
+                        }
+
+                        #total-amount-due,
+                        #authorized-amount,
+                        #balance-outstanding {
+                            font-weight: bold;
+                        }
+                        #authorized-amount {
+                            font-size: 14px;
+                            color: $grey-dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #complete {
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 6rem;
+
+        .btn {
+            color: $white;
+            padding: 15px 25px;
+            line-height: 1.5;
+            border-radius: 6px;
+            border: none;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        #go-back {
+            .btn {
+                background-color: $red;
+            }
+        }
+        #proceed {
+            .btn {
+                background-color: $blue;
+            }
         }
     }
 }
