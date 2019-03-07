@@ -6445,10 +6445,16 @@ html, body {
         font-size: 24px;
         border-radius: 5px;
         padding: 2px 10px; }
+  #content #step1 h3 {
+    font-weight: bold; }
+  #content #step2 h3 {
+    font-weight: bold; }
   #content #step2 #passenger-set {
     margin-bottom: 0; }
   #content #step2 #add {
     text-align: right; }
+  #content #step3 h3 {
+    font-weight: bold; }
   #content #step3 .date-picker .input {
     display: inline-block;
     width: 75%;
@@ -6510,42 +6516,70 @@ html, body {
       color: #FFFFFF;
       border-radius: 5px;
       text-transform: capitalize; }
-  #content #step4 #arrangements .arrangement .arrangement-btn {
+  #content #step4 #arrangements {
+    margin-bottom: 35px; }
+    #content #step4 #arrangements .arrangement .arrangement-btn {
+      margin-bottom: 25px; }
+      #content #step4 #arrangements .arrangement .arrangement-btn .btn {
+        background-color: #0076BF;
+        color: #FFFFFF;
+        padding: 7px 14px;
+        line-height: 1;
+        border-radius: 4px;
+        font-size: 16px;
+        text-transform: capitalize; }
+    #content #step4 #arrangements .arrangement #layout {
+      margin: 0;
+      background: url("../../img/che-copterbg.png") top left;
+      background-size: cover;
+      min-height: 441px; }
+      #content #step4 #arrangements .arrangement #layout #layout-inner {
+        padding-right: 1.25rem;
+        position: absolute;
+        left: 0;
+        right: 0; }
+        #content #step4 #arrangements .arrangement #layout #layout-inner #seat {
+          border: 1px solid #7D8990;
+          padding: 1rem;
+          background-color: #FFFFFF; }
+        #content #step4 #arrangements .arrangement #layout #layout-inner .margined {
+          margin-right: 7.5px; }
+        #content #step4 #arrangements .arrangement #layout #layout-inner .pilot {
+          background: url("../../img/che-copter-seat-pilot.png") center center;
+          background-size: cover; }
+        #content #step4 #arrangements .arrangement #layout #layout-inner .taken {
+          background: url("../../img/che-copter-seat-taken.png") center center;
+          background-size: cover; }
+        #content #step4 #arrangements .arrangement #layout #layout-inner .empty {
+          background: url("../../img/che-copter-seat-empty.png") center center;
+          background-size: cover; }
+      #content #step4 #arrangements .arrangement #layout .top {
+        top: 35%; }
+      #content #step4 #arrangements .arrangement #layout .bottom {
+        top: 55%; }
+  #content #step4 #arrangements:last-child {
     margin-bottom: 25px; }
-    #content #step4 #arrangements .arrangement .arrangement-btn .btn {
+  #content #step5 h3 {
+    font-weight: bold; }
+  #content #step5 .btn {
+    background-color: #0076BF;
+    color: #FFFFFF;
+    padding: 7px 14px;
+    line-height: 1.425;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    width: 100%; }
+  #content #confirm {
+    text-align: center; }
+    #content #confirm .btn {
       background-color: #0076BF;
       color: #FFFFFF;
-      padding: 7px 14px;
-      line-height: 1;
-      border-radius: 4px;
-      font-size: 16px;
+      padding: 15px 25px;
+      line-height: 1.5;
+      border-radius: 6px;
+      border: none;
+      font-size: 24px;
+      font-weight: bold;
       text-transform: capitalize; }
-  #content #step4 #arrangements .arrangement #layout {
-    margin: 0;
-    background: url("../../img/che-copterbg.png") top left;
-    background-size: cover;
-    min-height: 441px; }
-    #content #step4 #arrangements .arrangement #layout #layout-inner {
-      padding-right: 1.25rem;
-      position: absolute;
-      left: 0;
-      right: 0; }
-      #content #step4 #arrangements .arrangement #layout #layout-inner #seat {
-        border: 1px solid #7D8990;
-        padding: 1rem;
-        background-color: #FFFFFF; }
-      #content #step4 #arrangements .arrangement #layout #layout-inner .margined {
-        margin-right: 7.5px; }
-      #content #step4 #arrangements .arrangement #layout #layout-inner .pilot {
-        background: url("../../img/che-copter-seat-pilot.png") center center;
-        background-size: cover; }
-      #content #step4 #arrangements .arrangement #layout #layout-inner .taken {
-        background: url("../../img/che-copter-seat-taken.png") center center;
-        background-size: cover; }
-      #content #step4 #arrangements .arrangement #layout #layout-inner .empty {
-        background: url("../../img/che-copter-seat-empty.png") center center;
-        background-size: cover; }
-    #content #step4 #arrangements .arrangement #layout .top {
-      top: 35%; }
-    #content #step4 #arrangements .arrangement #layout .bottom {
-      top: 55%; }
