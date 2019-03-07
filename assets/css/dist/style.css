@@ -6526,10 +6526,26 @@ html, body {
     background-size: cover;
     min-height: 441px; }
     #content #step4 #arrangements .arrangement #layout #layout-inner {
-      padding-left: .75rem;
-      padding-right: .75rem; }
+      padding-right: 1.25rem;
+      position: absolute;
+      left: 0;
+      right: 0; }
       #content #step4 #arrangements .arrangement #layout #layout-inner #seat {
         border: 1px solid #7D8990;
-        padding: 1rem; }
+        padding: 1rem;
+        background-color: #FFFFFF; }
       #content #step4 #arrangements .arrangement #layout #layout-inner .margined {
-        margin-left: 15px; }
+        margin-right: 7.5px; }
+      #content #step4 #arrangements .arrangement #layout #layout-inner .pilot {
+        background: url("../../img/che-copter-seat-pilot.png") center center;
+        background-size: cover; }
+      #content #step4 #arrangements .arrangement #layout #layout-inner .taken {
+        background: url("../../img/che-copter-seat-taken.png") center center;
+        background-size: cover; }
+      #content #step4 #arrangements .arrangement #layout #layout-inner .empty {
+        background: url("../../img/che-copter-seat-empty.png") center center;
+        background-size: cover; }
+    #content #step4 #arrangements .arrangement #layout .top {
+      top: 35%; }
+    #content #step4 #arrangements .arrangement #layout .bottom {
+      top: 55%; }

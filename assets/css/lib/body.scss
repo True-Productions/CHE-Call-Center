@@ -243,17 +243,38 @@ html,body {
                     min-height: 441px;
 
                     #layout-inner {
-                        padding-left: .75rem;
-                        padding-right: .75rem;
+                        padding-right: 1.25rem;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
 
                         #seat {
                             border: 1px solid $grey-dark;
                             padding: 1rem;
+                            background-color: $white;
                         }
 
                         .margined {
-                            margin-left: 15px;
+                            margin-right: 7.5px;
                         }
+                        .pilot {
+                            background: url('../../img/che-copter-seat-pilot.png') center center;
+                            background-size: cover;
+                        }
+                        .taken {
+                            background: url('../../img/che-copter-seat-taken.png') center center;
+                            background-size: cover;
+                        }
+                        .empty {
+                            background: url('../../img/che-copter-seat-empty.png') center center;
+                            background-size: cover;
+                        }
+                    }
+                    .top {
+                        top: 35%;
+                    }
+                    .bottom {
+                        top: 55%;
                     }
                 }
             }
