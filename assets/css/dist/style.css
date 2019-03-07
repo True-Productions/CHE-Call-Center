@@ -6559,18 +6559,6 @@ html, body {
         top: 55%; }
   #content #step4 #arrangements:last-child {
     margin-bottom: 25px; }
-  #content #step5 h3 {
-    font-weight: bold; }
-  #content #step5 .btn {
-    background-color: #0076BF;
-    color: #FFFFFF;
-    padding: 7px 14px;
-    line-height: 1.425;
-    border-radius: 4px;
-    border: none;
-    font-size: 16px;
-    text-transform: capitalize;
-    width: 100%; }
   #content #confirm {
     text-align: center; }
     #content #confirm .btn {
