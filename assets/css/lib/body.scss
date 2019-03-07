@@ -373,7 +373,7 @@ html,body {
                         .input {
                             border-radius: 0;
                             border: 1px solid $grey-medium;
-                            width: 25%;
+                            width: 50%;
                             font-size: 14px;
                             line-height: 1;
                             padding: 0px 5px;
@@ -393,6 +393,7 @@ html,body {
                     #pricing {
                         text-align: right;
                         color: $grey-super-dark;
+                        padding-right: 0;
 
                         .dollar {
                             text-align: right;
