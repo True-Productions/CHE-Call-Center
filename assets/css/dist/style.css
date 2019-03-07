@@ -6643,6 +6643,8 @@ html, body {
         #content #checkout .receipt #receipt #receipt-inner #pricing #authorized-amount {
           font-size: 14px;
           color: #7D8990; }
+    #content #checkout .receipt #receipt #products {
+      padding-left: 0; }
   #content #complete {
     text-align: center;
     padding-top: 0;
