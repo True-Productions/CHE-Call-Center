@@ -351,6 +351,13 @@ html,body {
                     padding-left: .75rem;
                     padding-right: .75rem;
 
+                    #input {
+                        .input {
+                            border-radius: 0;
+                            border: 1px solid #7D8990;
+                        }
+                    }
+
                     #header {
                         text-align: right;
                         text-transform: capitalize;

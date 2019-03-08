@@ -6595,6 +6595,9 @@ html, body {
     #content #checkout .receipt #receipt #receipt-inner {
       padding-left: .75rem;
       padding-right: .75rem; }
+      #content #checkout .receipt #receipt #receipt-inner #input .input {
+        border-radius: 0;
+        border: 1px solid #7D8990; }
       #content #checkout .receipt #receipt #receipt-inner #header {
         text-align: right;
         text-transform: capitalize;
