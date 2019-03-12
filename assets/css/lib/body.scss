@@ -430,21 +430,21 @@ html,body {
                     }
                 }
 
-                #product-title {
+                #category-title {
                     text-transform: capitalize;
                     font-weight: bold;
                     font-size: 20px;
                 }
                 
-                #products {
+                #categories {
                     padding-left: 0;
 
-                    #product-set {
-                        #product-set-title {
+                    #category-set {
+                        #category-set-title {
                             color: $grey-super-dark;
                             font-weight: bold;
                         }
-                        .product-item {
+                        .category-item {
                             margin-bottom: 15px;
 
                             label {
