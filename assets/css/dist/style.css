@@ -6595,9 +6595,14 @@ html, body {
     #content #checkout .receipt #receipt #receipt-inner {
       padding-left: .75rem;
       padding-right: .75rem; }
-      #content #checkout .receipt #receipt #receipt-inner #input .input {
-        border-radius: 0;
-        border: 1px solid #7D8990; }
+      #content #checkout .receipt #receipt #receipt-inner #input {
+        border-right: 1px solid #F1F1F1; }
+        #content #checkout .receipt #receipt #receipt-inner #input .input {
+          border-radius: 0;
+          border: 1px solid #C8C8C8; }
+        #content #checkout .receipt #receipt #receipt-inner #input .product-item {
+          color: #262626;
+          text-transform: capitalize; }
       #content #checkout .receipt #receipt #receipt-inner #header {
         text-align: right;
         text-transform: capitalize;
@@ -6646,8 +6651,37 @@ html, body {
         #content #checkout .receipt #receipt #receipt-inner #pricing #authorized-amount {
           font-size: 14px;
           color: #7D8990; }
+    #content #checkout .receipt #receipt #product-title {
+      text-transform: capitalize;
+      font-weight: bold;
+      font-size: 20px; }
     #content #checkout .receipt #receipt #products {
       padding-left: 0; }
+      #content #checkout .receipt #receipt #products #product-set #product-set-title {
+        color: #262626;
+        font-weight: bold; }
+      #content #checkout .receipt #receipt #products #product-set .product-item {
+        margin-bottom: 15px; }
+        #content #checkout .receipt #receipt #products #product-set .product-item label {
+          border-radius: 7px;
+          overflow: hidden;
+          border: 1px solid #F1F1F1;
+          display: flex; }
+        #content #checkout .receipt #receipt #products #product-set .product-item input[type=radio] {
+          display: none; }
+        #content #checkout .receipt #receipt #products #product-set .product-item input[type=radio]:checked + .label {
+          background-color: #0076BF;
+          color: #FFFFFF; }
+        #content #checkout .receipt #receipt #products #product-set .product-item .price {
+          background-color: #F5EBB7;
+          color: #262626;
+          padding: 10px; }
+      #content #checkout .receipt #receipt #products #product-set .label {
+        background-color: #C8C8C8;
+        color: #262626;
+        margin-bottom: 0;
+        flex-grow: 2;
+        padding: 10px; }
   #content #complete {
     text-align: center;
     padding-top: 0;

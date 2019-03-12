@@ -8,6 +8,7 @@ $grey-medium: #C8C8C8;
 $grey-dark: #7D8990;
 $grey-super-dark: #262626;
 $green: #08D500;
+$beige: #F5EBB7;
 
 html,body {
     width: 100%;
@@ -352,9 +353,16 @@ html,body {
                     padding-right: .75rem;
 
                     #input {
+                        border-right: 1px solid $grey-light;
+
                         .input {
                             border-radius: 0;
-                            border: 1px solid #7D8990;
+                            border: 1px solid $grey-medium;
+                        }
+
+                        .product-item {
+                            color: $grey-super-dark;
+                            text-transform: capitalize;
                         }
                     }
 
@@ -421,9 +429,55 @@ html,body {
                         }
                     }
                 }
+
+                #product-title {
+                    text-transform: capitalize;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
                 
                 #products {
                     padding-left: 0;
+
+                    #product-set {
+                        #product-set-title {
+                            color: $grey-super-dark;
+                            font-weight: bold;
+                        }
+                        .product-item {
+                            margin-bottom: 15px;
+
+                            label {
+                                border-radius: 7px;
+                                overflow: hidden;
+                                border: 1px solid $grey-light;
+                                display: flex;
+                            }
+
+                            input[type=radio] {
+                                display: none;
+                            }
+
+                            input[type=radio]:checked + .label {
+                                background-color: $blue;
+                                color: $white;
+                            }
+
+                            .price {
+                                background-color: $beige;
+                                color: $grey-super-dark;
+                                padding: 10px;
+                            }
+                        }
+
+                        .label {
+                            background-color: $grey-medium;
+                            color: $grey-super-dark;
+                            margin-bottom: 0;
+                            flex-grow: 2;
+                            padding: 10px;
+                        }
+                    }
                 }
             }
         }
