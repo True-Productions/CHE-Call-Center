@@ -1,3 +1,5 @@
+(function(){
+    
 var steps = document.querySelectorAll('.steps'),
     step1 = document.querySelector('#step1'),
     step2 = document.querySelector('#step2'),
@@ -37,3 +39,5 @@ function showNextStep() {
     }
 }
 //showNextStep();
+
+})();
