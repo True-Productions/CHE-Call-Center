@@ -6447,20 +6447,23 @@ html, body {
         padding: 2px 10px; }
   #content #step1 h3 {
     font-weight: bold; }
+  #content #step1 .select {
+    margin-bottom: 15px;
+    width: 100%; }
+  #content #step1 .select.no-margin {
+    margin-bottom: 0; }
+  #content #step1 #passenger-set {
+    margin-bottom: 0; }
+  #content #step1 #add {
+    text-align: right; }
   #content #step2 h3 {
     font-weight: bold; }
-  #content #step2 #passenger-set {
-    margin-bottom: 0; }
-  #content #step2 #add {
-    text-align: right; }
-  #content #step3 h3 {
-    font-weight: bold; }
-  #content #step3 .date-picker .input {
+  #content #step2 .date-picker .input {
     display: inline-block;
-    width: 75%;
+    width: 100%;
     margin-right: -5px;
-    border-radius: 4px 0 0 4px; }
-  #content #step3 .date-picker .btn {
+    border-radius: 4px; }
+  #content #step2 .date-picker .btn {
     width: 25%;
     display: inline-block;
     border: 2px solid #FF2021;
@@ -6470,45 +6473,45 @@ html, body {
     font-size: 16px;
     line-height: 1;
     border-radius: 0 4px 4px 0; }
-  #content #step3 .checklist {
+  #content #step2 .checklist {
     text-align: center;
     margin-bottom: 35px; }
-    #content #step3 .checklist .label {
+    #content #step2 .checklist .label {
       display: inline-block;
       text-transform: capitalize;
       font-weight: bold;
       color: #0076BF;
       margin-right: 15px;
       margin-bottom: 0; }
-    #content #step3 .checklist .checkbox {
+    #content #step2 .checklist .checkbox {
       line-height: 1.5; }
-    #content #step3 .checklist label {
+    #content #step2 .checklist label {
       text-transform: capitalize;
       font-weight: bold;
       color: #0076BF;
       margin-right: 15px; }
-  #content #step3 #flight {
+  #content #step2 #flight {
     text-transform: uppercase;
     font-weight: bold; }
-  #content #step3 #results #result {
+  #content #step2 #results #result {
     text-align: center; }
-    #content #step3 #results #result .result-cell {
+    #content #step2 #results #result .result-cell {
       padding: 7.5px 15px;
       border: 1px solid rgba(0, 118, 191, 0.35);
       border-bottom: none; }
-    #content #step3 #results #result .result-cell:last-child {
+    #content #step2 #results #result .result-cell:last-child {
       border: 1px solid rgba(0, 118, 191, 0.35); }
-    #content #step3 #results #result .btn {
+    #content #step2 #results #result .btn {
       display: block;
       color: #0076BF;
       width: 100%;
       height: 100%; }
-    #content #step3 #results #result .btn:hover {
+    #content #step2 #results #result .btn:hover {
       background-color: #EBF4FD; }
-  #content #step4 #reschedule {
+  #content #step3 #reschedule {
     margin-top: 0;
     margin-bottom: 35px; }
-    #content #step4 #reschedule .btn {
+    #content #step3 #reschedule .btn {
       background-color: #FF2021;
       padding: 10px 25px;
       font-size: 18px;
@@ -6516,11 +6519,11 @@ html, body {
       color: #FFFFFF;
       border-radius: 5px;
       text-transform: capitalize; }
-  #content #step4 #arrangements {
+  #content #step3 #arrangements {
     margin-bottom: 35px; }
-    #content #step4 #arrangements .arrangement .arrangement-btn {
+    #content #step3 #arrangements .arrangement .arrangement-btn {
       margin-bottom: 25px; }
-      #content #step4 #arrangements .arrangement .arrangement-btn .btn {
+      #content #step3 #arrangements .arrangement .arrangement-btn .btn {
         background-color: #0076BF;
         color: #FFFFFF;
         padding: 7px 14px;
@@ -6528,36 +6531,36 @@ html, body {
         border-radius: 4px;
         font-size: 16px;
         text-transform: capitalize; }
-    #content #step4 #arrangements .arrangement #layout {
+    #content #step3 #arrangements .arrangement #layout {
       margin: 0;
       background: url("../../img/che-copterbg.png") top left;
       background-size: cover;
       min-height: 441px; }
-      #content #step4 #arrangements .arrangement #layout #layout-inner {
+      #content #step3 #arrangements .arrangement #layout #layout-inner {
         padding-right: 1.25rem;
         position: absolute;
         left: 0;
         right: 0; }
-        #content #step4 #arrangements .arrangement #layout #layout-inner #seat {
+        #content #step3 #arrangements .arrangement #layout #layout-inner #seat {
           border: 1px solid #7D8990;
           padding: 1rem;
           background-color: #FFFFFF; }
-        #content #step4 #arrangements .arrangement #layout #layout-inner .margined {
+        #content #step3 #arrangements .arrangement #layout #layout-inner .margined {
           margin-right: 7.5px; }
-        #content #step4 #arrangements .arrangement #layout #layout-inner .pilot {
+        #content #step3 #arrangements .arrangement #layout #layout-inner .pilot {
           background: url("../../img/che-copter-seat-pilot.png") center center;
           background-size: cover; }
-        #content #step4 #arrangements .arrangement #layout #layout-inner .taken {
+        #content #step3 #arrangements .arrangement #layout #layout-inner .taken {
           background: url("../../img/che-copter-seat-taken.png") center center;
           background-size: cover; }
-        #content #step4 #arrangements .arrangement #layout #layout-inner .empty {
+        #content #step3 #arrangements .arrangement #layout #layout-inner .empty {
           background: url("../../img/che-copter-seat-empty.png") center center;
           background-size: cover; }
-      #content #step4 #arrangements .arrangement #layout .top {
+      #content #step3 #arrangements .arrangement #layout .top {
         top: 35%; }
-      #content #step4 #arrangements .arrangement #layout .bottom {
+      #content #step3 #arrangements .arrangement #layout .bottom {
         top: 55%; }
-  #content #step4 #arrangements:last-child {
+  #content #step3 #arrangements:last-child {
     margin-bottom: 25px; }
   #content #confirm {
     text-align: center; }

@@ -15,69 +15,104 @@
                     <div class="column">
                         <div class="container" id="inner-content">
 
-                            <h3>Customer Search</h3>
-                            <div class="columns" id="input-set">
-                                <div class="column">
-                                    <input value="" type="text" placeholder="Full Name*" class="input" required />
-                                    <input value="" type="text" placeholder="Phone Number*" class="input" required />
-                                    <select class="input" required>
-                                        <option disabled selected class="option">Service Inquiry*</option>
-                                        <option class="option">Tours</option>
-                                        <option class="option">Gift Certificate</option>
-                                        <option class="option">Experience Package</option>
-                                        <option class="option">Charter</option>
-                                        <option class="option">Groups/Events</option>
-                                        <option class="option">Commercial</option>
-                                        <option class="option">Flight Schedule Adjustment</option>
-                                    <!-- end .input --></select>
-                                    <select class="input" required>
-                                        <option disabled selected class="option">Vendor/Location*</option>
-                                        <option class="option">Big Bus</option>
-                                        <option class="option">Shoreline</option>
-                                        <option class="option">360</option>
-                                        <option class="option">IPB</option>
-                                        <option class="option">Park Shops</option>
-                                        <option class="option">Apple Store Kiosk</option>
-                                        <option class="option">Navy Pier Kiosk</option>
-                                        <option class="option">Hancock Kiosk</option>
-                                        <option class="option">Art Inst Kiosk</option>
-                                        <option class="option">River Walk Kiosk</option>
-                                        <option class="option">McDonalds Kiosk</option>
-                                        <option class="option">Hotels</option>
-                                    <!-- end .input --></select>
-                                <!-- end .column --></div>
-                                <div class="column">
-                                    <input value="" type="text" placeholder="Email*" class="input" required />
-                                    <select class="input" required>
-                                        <option disabled selected class="option">Resident or Visitor*</option>
-                                        <option class="option">Resident</option>
-                                        <option class="option">Visitor</option>
-                                    </select>
-                                    <select class="input" required>
-                                        <option disabled selected class="option">Lead Source*</option>
-                                        <option class="option">Online/Website</option>
-                                        <option class="option">OTA</option>
-                                        <option class="option">Groupon</option>
-                                        <option class="option">Word of Mouth/GC/Referral</option>
-                                        <option class="option">Kiosk</option>
-                                        <option class="option">Vendor</option>
-                                        <option class="option">Google Whisper</option>
-                                        <option class="option">Social Media</option>
-                                        <option class="option">Email</option>
-                                        <option class="option">Flight Schedule Adjustment</option>
-                                    <!-- end .input --></select>
-                                <!-- end .column --></div>
-                            <!-- end #input-set --></div>
-
                             <h3>Sales Agent</h3>
                             <div class="columns" id="input-set">
                                 <div class="column">
-                                    <input value="" type="text" placeholder="Concierge/Kiosk Name*" class="input" required />
+                                    <input value="" type="text" placeholder="Name*" class="input" required />
+                                <!-- end .column --></div>
+                                <div class="column"></div>
+                            <!-- end #input-set --></div>
+    
+                            <h3>Customer Search</h3>
+                            <div class="columns" id="input-set">
+                                <div class="column">
+                                    <div class="select">
+                                        <select class="input" name="Lead Source*" required>
+                                            <option disabled selected class="option">Lead Source*</option>
+                                            <option class="option">Online/Website</option>
+                                            <option class="option">Expedia</option>
+                                            <option class="option">Adrenaline</option>
+                                            <option class="option">Viater</option>
+                                            <option class="option">Go Card</option>
+                                            <option class="option">Get Your Guide</option>
+                                            <option class="option">Groupon Match</option>
+                                            <option class="option">Word of Mouth/GC/Referral</option>
+                                            <option class="option">Kiosk</option>
+                                            <option class="option">Vendor</option>
+                                            <option class="option">Online Ad</option>
+                                            <option class="option">Social Media</option>
+                                            <option class="option">Email</option>
+                                            <option class="option">Flight Schedule Adjustment</option>
+                                        <!-- end .input --></select>
+                                    <!-- end .select --></div>
+                                    <div class="select no-margin">
+                                        <select class="input" name="Purpose of Call*" required>
+                                            <option disabled selected class="option">Purpose of Call*</option>
+                                            <option class="option">Tours</option>
+                                            <option class="option">Gift Certificate</option>
+                                            <option class="option">Experience Package</option>
+                                            <option class="option">Charter</option>
+                                            <option class="option">Groups/Events</option>
+                                            <option class="option">Commercial</option>
+                                            <option class="option">Flight Schedule Adjustment</option>
+                                        <!-- end .input --></select>
+                                    <!-- end .select --></div>
                                 <!-- end .column --></div>
                                 <div class="column">
-                                    <input value="" type="text" placeholder="Contact Info*" class="input" required />
+                                    <div class="select">
+                                        <select class="input" name="Vendor/Location*" required>
+                                            <option disabled selected class="option">Vendor/Location*</option>
+                                            <option class="option">Big Bus</option>
+                                            <option class="option">Shoreline</option>
+                                            <option class="option">360</option>
+                                            <option class="option">FPB</option>
+                                            <option class="option">Park Shops</option>
+                                            <option class="option">Apple Store Kiosk</option>
+                                            <option class="option">Navy Pier Kiosk</option>
+                                            <option class="option">Hancock Kiosk</option>
+                                            <option class="option">Art Inst Kiosk</option>
+                                            <option class="option">River Walk Kiosk</option>
+                                            <option class="option">McDonalds Kiosk</option>
+                                            <option class="option">Hotels</option>
+                                        <!-- end .input --></select>
+                                    <!-- end .select --></div>
                                 <!-- end .column --></div>
                             <!-- end #input-set --></div>
+
+                            <h3>Passenger 1</h3>
+                            <div class="columns" id="passenger-set">
+                                <div class="column is-half">
+                                    <input value="" type="text" placeholder="Full Name*" class="input" required />
+                                    <input value="" type="text" placeholder="Mobile Phone*" class="input" required />
+                                    <div class="select no-margin">
+                                        <select class="input" name="Resident or Visitor*" required>
+                                            <option disabled selected class="option">Resident or Visitor*</option>
+                                            <option class="option">Resident</option>
+                                            <option class="option">Visitor</option>
+                                        <!-- end .input --></select>
+                                    <!-- end .select --></div>
+                                <!-- end .column --></div>
+                                <div class="column is-half">
+                                    <input value="" type="text" placeholder="Email*" class="input" required />
+                                    <input value="" type="text" placeholder="Weight*" class="input" required />
+                                    <div class="select no-margin">
+                                        <select class="input" name="Reservation Status*" required>
+                                            <option disabled selected class="option">Reservation Status*</option>
+                                            <option class="option">Active</option>
+                                            <option class="option">Flown</option>
+                                            <option class="option">Pending</option>
+                                            <option class="option">Cancelled Customer</option>
+                                            <option class="option">CHE Cancelled</option>
+                                        <!-- end .input --></select>
+                                    <!-- end .select --></div>
+                                <!-- end .column --></div>
+                            <!-- end #passenger-set --></div>
+                            <div class="columns" id="add" data-target="#passenger-set">
+                                <div class="column is-3 is-offset-9">
+                                    <button class="btn">Add Passenger</button>
+                                    <button class="btn is-hidden">Remove Passenger</button>
+                                <!-- end .column --></div>
+                            <!-- end #add --></div>
 
                         <!-- end #inner-content --></div>
                     <!-- end .column --></div>
@@ -92,50 +127,12 @@
                     <div class="column">
                         <div class="container" id="inner-content">
 
-                            <h3>Passenger 1</h3>
-                            <div class="columns" id="passenger-set">
-                                <div class="column is-half">
-                                    <input value="" type="text" placeholder="Full Name*" class="input" required />
-                                    <input value="" type="text" placeholder="Mobile Phone*" class="input" required />
-                                <!-- end .column --></div>
-                                <div class="column is-half">
-                                    <input value="" type="text" placeholder="Email*" class="input" required />
-                                    <input value="" type="text" placeholder="Weight*" class="input" required />
-                                <!-- end .column --></div>
-                            <!-- end #passenger-set --></div>
-                            <div class="columns" id="add" data-target="#passenger-set">
-                                <div class="column is-3 is-offset-9">
-                                    <button class="btn">+</button>
-                                    <button class="btn is-hidden">-</button>
-                                <!-- end .column --></div>
-                            <!-- end #add --></div>
-
-                        <!-- end #inner-content --></div>
-                    <!-- end .column --></div>
-                <!-- end .columns --></div>
-            <!-- end .container --></div>
-        <!-- end #step2 --></section>
-
-        <section id="step3" class="steps section">
-            <div class="container">
-                <h2>Step <span class="number">3</span></h2>
-                <div class="columns">
-                    <div class="column">
-                        <div class="container" id="inner-content">
-
                             <h3>Search Flight</h3>
                             <div class="columns" id="search-set">
                                 <div class="column">
                                     <div class="date-picker">
-                                        <input value="" type="date" placeholder="Search Date*" class="input" required /> <button class="btn">Search Flights</button>
+                                        <input value="" type="date" placeholder="Search Date*" class="input" required />
                                     <!-- end .date-picker --></div>
-                                    <div class="checklist">
-                                        <span class="label">Show:</span>
-                                        <input type="checkbox" class="checkbox" name="all" required /> <label for="all">All Flights</label>
-                                        <input type="checkbox" class="checkbox" name="day" required /> <label for="day">Day</label>
-                                        <input type="checkbox" class="checkbox" name="twilight" required /> <label for="twilight">Twilight</label>
-                                        <input type="checkbox" class="checkbox" name="night" /> <label for="night">Night</label>
-                                    <!-- end .checklist --></div>
                                 <!-- end .column --></div>
                             <!-- end #search-set --></div>
 
@@ -201,18 +198,12 @@
             <!-- end .container --></div>
         <!-- end #step3 --></section>
 
-        <section id="step4" class="steps section">
+        <section id="step3" class="steps section">
             <div class="container">
-                <h2>Step <span class="number">4</span></h2>
+                <h2>Step <span class="number">3</span></h2>
                 <div class="columns">
                     <div class="column">
                         <div class="container" id="inner-content">
-
-                            <div class="columns" id="reschedule">
-                                <div class="column">
-                                    <a href="#" class="btn">Reschedule Flight</a>
-                                </div>
-                            </div>
 
                             <div class="columns" id="arrangements">
                                 <div class="column arrangement" id="arrangement1">

@@ -121,13 +121,16 @@ html,body {
         h3 {
             font-weight: bold;
         }
-    }
 
-    #step2 {
-        h3 {
-            font-weight: bold;
+        .select {
+            margin-bottom: 15px;
+            width: 100%;
         }
-        
+
+        .select.no-margin {
+            margin-bottom: 0;
+        }
+
         #passenger-set {
             margin-bottom: 0;
         }
@@ -137,7 +140,7 @@ html,body {
         }
     }
 
-    #step3 {
+    #step2 {
         h3 {
             font-weight: bold;
         }
@@ -145,9 +148,9 @@ html,body {
         .date-picker {
             .input {
                 display: inline-block;
-                width: 75%;
+                width: 100%;
                 margin-right: -5px;
-                border-radius: 4px 0 0 4px;
+                border-radius: 4px;
             }
 
             .btn {
@@ -219,7 +222,7 @@ html,body {
         }
     }
 
-    #step4 {
+    #step3 {
         #reschedule {
             margin-top: 0;
             margin-bottom: 35px;
