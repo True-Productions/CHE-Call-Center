@@ -45,7 +45,7 @@
                                             <option class="option">Flight Schedule Adjustment</option>
                                         <!-- end .input --></select>
                                     <!-- end .select --></div>
-                                    <div class="select no-margin">
+                                    <div class="select">
                                         <select class="input" name="Purpose of Call*" required>
                                             <option disabled selected class="option">Purpose of Call*</option>
                                             <option class="option">Tours</option>
@@ -79,7 +79,7 @@
                                 <!-- end .column --></div>
                             <!-- end #input-set --></div>
 
-                            <h3>Passenger 1</h3>
+                            <h3>Passenger 1 - Designated Contact</h3>
                             <div class="columns" id="passenger-set">
                                 <div class="column is-half">
                                     <input value="" type="text" placeholder="Full Name*" class="input" required />
@@ -108,7 +108,42 @@
                                 <!-- end .column --></div>
                             <!-- end #passenger-set --></div>
                             <div class="columns" id="add" data-target="#passenger-set">
-                                <div class="column is-3 is-offset-9">
+                                <div class="column is-6 is-offset-6">
+                                    <button class="btn">Add Passenger</button>
+                                    <button class="btn">Remove Passenger</button>
+                                <!-- end .column --></div>
+                            <!-- end #add --></div>
+
+                            <h3>Passenger 2</h3>
+                            <div class="columns" id="passenger-set">
+                                <div class="column is-half">
+                                    <input value="" type="text" placeholder="Full Name*" class="input" required />
+                                    <input value="" type="text" placeholder="Mobile Phone*" class="input" required />
+                                    <div class="select no-margin">
+                                        <select class="input" name="Resident or Visitor*" required>
+                                            <option disabled selected class="option">Resident or Visitor*</option>
+                                            <option class="option">Resident</option>
+                                            <option class="option">Visitor</option>
+                                        <!-- end .input --></select>
+                                    <!-- end .select --></div>
+                                <!-- end .column --></div>
+                                <div class="column is-half">
+                                    <input value="" type="text" placeholder="Email*" class="input" required />
+                                    <input value="" type="text" placeholder="Weight*" class="input" required />
+                                    <div class="select no-margin">
+                                        <select class="input" name="Reservation Status*" required>
+                                            <option disabled selected class="option">Reservation Status*</option>
+                                            <option class="option">Active</option>
+                                            <option class="option">Flown</option>
+                                            <option class="option">Pending</option>
+                                            <option class="option">Cancelled Customer</option>
+                                            <option class="option">CHE Cancelled</option>
+                                        <!-- end .input --></select>
+                                    <!-- end .select --></div>
+                                <!-- end .column --></div>
+                            <!-- end #passenger-set --></div>
+                            <div class="columns" id="add" data-target="#passenger-set">
+                                <div class="column is-6 is-offset-6">
                                     <button class="btn">Add Passenger</button>
                                     <button class="btn is-hidden">Remove Passenger</button>
                                 <!-- end .column --></div>
