@@ -34,8 +34,13 @@ html,body {
             color: $white;
             font-size: 24px;
             border-radius: 6px;
+            border: 0;
             padding: 7.5px 15px;
+            margin-left: 10px;
             font-weight: bold;
+        }
+        .btn:first-child {
+            margin-left: 0;
         }
     
         .exit {
@@ -55,6 +60,11 @@ html,body {
 
 #content {
     padding: 0;
+
+    .btn {
+        border: 0;
+        margin-left: 10px;
+    }
 
     .steps {
         color: $blue;
@@ -85,6 +95,13 @@ html,body {
             border: 2px solid rgba(18,18,18,.25);
             border-radius: 10px;
             background-color: $white;
+
+            .inner-section {
+                margin-bottom: 25px;
+            }
+            .inner-section:last-child {
+                margin-bottom: 0;
+            }
 
             h3 {
                 text-transform: capitalize;
