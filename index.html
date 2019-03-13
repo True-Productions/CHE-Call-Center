@@ -48,7 +48,11 @@
                                 <!-- end .column --></div>
                                 <div class="column">
                                     <input value="" type="text" placeholder="Email*" class="input" required />
-                                    <input value="" type="text" placeholder="Resident or Visitor*" class="input" required />
+                                    <select class="input" required>
+                                        <option disabled selected class="option">Resident or Visitor*</option>
+                                        <option class="option">Resident</option>
+                                        <option class="option">Visitor</option>
+                                    </select>
                                     <select class="input" required>
                                         <option disabled selected class="option">Lead Source*</option>
                                         <option class="option">Online/Website</option>
@@ -101,7 +105,6 @@
                             <!-- end #passenger-set --></div>
                             <div class="columns" id="add" data-target="#passenger-set">
                                 <div class="column is-3 is-offset-9">
-                                    <button class="btn">Save</button>
                                     <button class="btn">+</button>
                                     <button class="btn is-hidden">-</button>
                                 <!-- end .column --></div>
@@ -452,9 +455,8 @@
             <div class="columns">
                 <div class="column is-9 is-offset-3" id="btn-set">
                     <button class="btn exit">Save & Exit</button>
-                    <button class="btn continue">Save & Continue</button>
                     <button class="btn back">Back</button>
-                    <button class="btn next">Next</button>
+                    <button class="btn continue">Save & Continue</button>
                 <!-- end #btn-set --></div>
             <!-- end .columns --></div>
         <!-- end .container --></div>
