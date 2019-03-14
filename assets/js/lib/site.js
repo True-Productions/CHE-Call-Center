@@ -1,4 +1,4 @@
-(function(){
+(function() {
     
     // Global variables.
     var container = document.getElementById('content'),
@@ -6,7 +6,8 @@
         step1 = document.querySelector('#step1'),
         step2 = document.querySelector('#step2'),
         step3 = document.querySelector('#step3'),
-        confirm = document.querySelector('#confirm'),
+        confirm = document.getElementById('confirm'),
+        confirmBtn = confirm.querySelector('.btn');
         checkout = document.querySelector('#checkout')
         complete = document.querySelector('#complete');
 
@@ -20,60 +21,62 @@
         step2.classList.add('is-hidden');
         step3.classList.add('is-hidden');
 
+        if (step3.classList.contains('is-hidden')) {
+            confirm.classList.add('is-hidden');
+        } else {
+            confirm.classList.remove('is-hidden');
+        }
+
         checkout.classList.add('is-hidden');
         if (checkout.classList.contains('is-hidden')) {
             complete.classList.add('is-hidden');
-        }
-
-        if (step3.classList.contains('is-hidden')) {
-            confirm.classList.add('is-hidden');
+        } else {
+            complete.classList.remove('is-hidden');
         }
     }
     window.onload = function() {
         hideAllSteps();
     }
 
-    // Show next step when click on Save & Continue button.
-    function showNextStep() {
+    // Adds step based .
+    function increaseStep() {
         scontinue.addEventListener('click', function() {
-            for (var i = 0; i < steps.length - 1; i++) {
-                if (steps[i].classList.contains('is-hidden')) {
-                    steps[i].classList.remove('is-hidden');
-                    steps[i + 1].classList.remove('is-hidden');
-                }
-            }
-
-            if (!checkout.classList.contains('is-hidden')) {
-                complete.classList.remove('is-hidden');
-            }
-    
-            if (!step3.classList.contains('is-hidden')) {
-                confirm.classList.remove('is-hidden');
-            }
+            
         });
     }
-    showNextStep();
 
-    // Goes back to previous step and hides current step open.
-    function goBackStep() {
+    // Decreases step based on .
+    function decreaseStep() {
         back.addEventListener('click', function() {
-            for (var i = 0; i < steps.length - 1; i++) {
-                if (!steps[i].classList.contains('is-hidden')) {
-                    steps[i].classList.add('is-hidden');
-                    steps[i + 1].classList.add('is-hidden');
-                }
-            }
+            
+        });
+    }
 
+    // Shows steps based on value denoted.
+    function changeStep() {
+
+
+        if (!step3.classList.contains('is-hidden')) {
+            confirm.classList.remove('is-hidden');
+        } else {
+            confirm.classList.add('is-hidden');
+        }
+        if (!checkout.classList.contains('is-hidden')) {
+            complete.classList.remove('is-hidden');
+        } else {
+            complete.classList.add('is-hidden');
+        }
+    }
+
+    // Show checkout section if Continue to Checkout button is clicked.
+    function showCheckout() {
+        confirmBtn.addEventListener('click', function() {
             if (checkout.classList.contains('is-hidden')) {
-                complete.classList.add('is-hidden');
-            }
-    
-            if (step3.classList.contains('is-hidden')) {
-                confirm.classList.add('is-hidden');
+                checkout.classList.remove('is-hidden');
             }
         });
     }
-    goBackStep();
+    showCheckout();
 
     // Save info saved in input fields and exit the screen.
     function saveExit() {
