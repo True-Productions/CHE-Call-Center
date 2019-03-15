@@ -35,7 +35,7 @@
         }
     }
     window.onload = function() {
-        hideAllSteps();
+        //hideAllSteps();
     }
 
     // Adds step based .
